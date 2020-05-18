@@ -1,0 +1,29 @@
+.feature {
+    padding: 128px 0 171px;
+    background-color: #fbfbfb;
+}
+
+.feature__items {
+    margin-top: 113px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.feature__item {
+    width: 360px;
+    height: 358px;
+    background-color: #ff5c36;
+    margin-bottom: 23px;
+}
+
+.feature__item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.feature__img {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
