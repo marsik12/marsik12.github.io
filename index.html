@@ -781,7 +781,9 @@
   <!-- Smooth Scroll -->
   <script src="smooth-scroll.js"></script>
   <script>
-    var scroll = new SmoothScroll('a[href*="#"]');
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      offset: 25
+    });
   </script>
 
 </body>
