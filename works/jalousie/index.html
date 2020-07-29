@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Jalousie.uz - Sifatli va arzon jalyuzilar olami</title>
+
+  <!-- Bootstrap --> 
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <style type="text/css" media="screen">
+    #button {
+      display: inline-block;
+      background-color: #FF9800;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      border-radius: 4px;
+      margin: 30px;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      transition: background-color .3s;
+      z-index: 1000;
+    }
+
+    #button:hover {
+      cursor: pointer;
+      background-color: #333;
+    }
+
+    #button:active {
+      background-color: #555;
+    }
+
+    #button::after {
+      content: "\f077";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2em;
+      line-height: 50px;
+      color: #fff;
+    }
+  </style>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body> 
+
+  <a id="button"></a>
+
+  <div class="visible-xs">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Jalousie.uz</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#main">Bosh sahifa <span class="sr-only">(current)</span></a></li>
+            <li><a href="#types">Jalyuzi turlari</a></li>
+            <li><a href="#portfolio">Bizning ishlar</a></li>
+            <li><a href="#offer">Aksiyalar</a></li>
+            <li><a href="#feedback">Biz haqimizda</a></li>
+            <li><a href="#contacts">Qayta aloqa</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+
+  <header id="header">
+    <div class="container" id="container">
+      <div class="row">
+        <div class="hidden-xs col-sm-3 logotype">
+          <a href="index.html" title="">
+            <img src="img/logo.png" alt="Brand Logo" class="img-responsive">
+          </a>
+        </div>
+        <div class="col-sm-6 text-center descrypt">
+          <h4>Jalyuzi ishlab chiqarish, sotish va o'rnatib berish</h4>
+          <h5>Farg'ona viloyati, Quvasoy shahri</h5>
+        </div>
+        <div class="col-sm-3 phone_number">
+          <h3><a href="tel:+998943965494">+998 94 396-54-94</a></h3>
+          <p>Ish vaqti: 9 <sup>00</sup> dan 18 <sup>00</sup> gacha</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="hidden-xs" id="top_nav">
+    <div class="container">
+      <div class="row">
+        <ul class="list-inline">
+          <a href="#main">
+            <li>Bosh sahifa</li>
+          </a>
+          <a href="#types">
+            <li>Jalyuzi turlari</li>
+          </a>
+          <a href="#portfolio">
+            <li>Bizning ishlar</li>
+          </a>
+          <a href="#offer">
+            <li>Aksiyalar</li>
+          </a>
+          <a href="#feedback">
+            <li>Biz haqimizda</li>
+          </a>
+          <a href="#contacts">
+            <li>Qayta aloqa</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="main">
+    <div class="container">
+      <div class="row wow fadeInUp main_header">
+        <h1><span>Bepul yetkazib berish </span> <br> <span>va atigi 2 soatda o'rnatish </span> <br><span> faqat sizning
+            xonadoningiz uchun</span></h1>
+      </div>
+      <div class="row wow fadeInLeft" data-wow-delay="0.3s">
+        <h3>O'rnatib berish uchun masterni uyingizga borishi. <span>Mutlaqo bepul</span></h3>
+      </div>
+      <div class="row main_buttons">
+        <button class="wow fadeInLeft" data-wow-delay="0.5s" data-toggle="modal" href="#measurer_modal"
+          id="measurer">Master chaqirish</button>
+        <a href="#types" title=""><button class="wow fadeInLeft" data-wow-delay="0.6s" id="get_types">Jalyuzi
+            tanlash</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="types">
+    <div class="container">
+      <div class="row">
+        <div class="section_header wow fadeInUp text-center">
+          <h2>Jalyuzi turlari</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-3 col-sm-6">
+          <div class="card wow bounceInUp" data-wow-delay="0.2s">
+            <img src="img/types/5b72a436d67750aa4140e604.jpg" alt="Gorizontal jalyuzi"
+              class="img-responsive center-block">
+            <h4>Gorizontal jalyuzi</h4>
+            <br>
+            <button class="more" data-toggle="modal" href="#more_horizontal">Batafsil</button>
+            <button class="offer_btn" data-toggle="modal" href="#measurer_get">Buyurtma berish</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card wow bounceInUp" data-wow-delay="0.4s">
+            <img src="img/types/5bc190f9dbdf0f7ec576bf25.jpg" alt="Vertikal jalyuzi"
+              class="img-responsive center-block">
+            <h4>Vertikal jalyuzi</h4>
+            <br>
+            <button class="more" data-toggle="modal" href="#more_vertical">Batafsil</button>
+            <button class="offer_btn" data-toggle="modal" href="#measurer_get">Buyurtma berish</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card wow bounceInUp" data-wow-delay="0.6s">
+            <img src="img/types/5c765f0413a31e0aeb066543.jpg" alt="Rulonli jalyuzi" class="img-responsive center-block">
+            <h4>Rulonli jalyuzi</h4>
+            <br>
+            <button class="more" data-toggle="modal" href="#more_rulon">Batafsil</button>
+            <button class="offer_btn" data-toggle="modal" href="#measurer_get">Buyurtma berish</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="card wow bounceInUp" data-wow-delay="0.8s">
+            <img src="img/types/fdsfima.jpg" alt="Jalyuzi Plisse" class="img-responsive center-block">
+            <h4>Jalyuzi Plisse</h4>
+            <br>
+            <button class="more" data-toggle="modal" href="#more_plisse">Batafsil</button>
+            <button class="offer_btn" data-toggle="modal" href="#measurer_get">Buyurtma berish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="help">
+    <div class="container">
+      <div class="row wow fadeInDown" data-wow-delay="0.5s">
+        <div class="col-md-2 col-sm-8 visible-xs visible-sm">
+          <img src="img/8f4397968f008dc3c49c227398449672.jpg" alt="Bepul konsultatsiya"
+            class="img-responsive center-block help_img">
+        </div>
+        <div class="col-md-6 col-sm-4 col-md-offset-2">
+          <h3> Jalyuzi tanlashda qiynalyapsizmi?</h3>
+          <br>
+          <p id="invite" class="text-justify">Konsultatsiya uchun bizga ma'lumotlaringizni yuboring. Bizning mutaxassis
+            siz bilan tez orada bog'lanadi. Hamda barcha savollaringizga mamnuniyat bilan javob beradi.</p>
+          <br>
+          <button id="free_consult" data-toggle="modal" href="#measurer_get">Bepul konsultatsiya</button>
+        </div>
+        <div class="col-md-2 hidden-xs hidden-sm">
+          <img src="img/8f4397968f008dc3c49c227398449672.jpg" alt="Bepul konsultatsiya"
+            class="img-responsive center-block help_img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="section_header wow fadeInUp text-center">
+          <h2 id="port">Bizning ishlar</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="slider">
+            <div class="fotorama" data-nav="thumbs" data-ratio="4/3" data-fit="cover">
+              <img src="img/portfolio/8509215_w640_h640_izgotovlenie-vseh-vidov.jpg" alt="">
+              <img src="img/portfolio/13.jpg.jpg" alt="">
+              <img src="img/portfolio/093_original.jpg" alt="">
+              <img src="img/portfolio/1258517898_w640_h640_preimushhestva_ispolzovaniya_zhalyuzi.jpg" alt="">
+              <img src="img/portfolio/1081441505_w1280_h1280_9.jpg" alt="">
+              <img src="img/portfolio/34.jpg" alt="">
+              <img src="img/portfolio/загружено (1).jpg" alt="">
+              <img src="img/portfolio/загружено (2).jpg" alt="">
+              <img src="img/portfolio/загружено.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="offer">
+    <div class="container wow zoomIn">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="img/gift.jpg" alt="Sovg'a" class="img-responsive center-block gift">
+        </div>
+        <div class="col-md-9">
+          <h4>Aksiya</h4>
+          <br>
+          <h3>21.08.2019 gacha jalyuzi sotib olib, o'rnatib berishga buyurtma bering</h3>
+          <p>Hamda bepul ravishda setkani qo'lga kiriting.</p>
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <form action="send.php" method="POST">
+                <input type="hidden" name="what" value="Aksiyada qatnashish">
+                <input name="name" type="text" required="" placeholder="Ismingiz" class="form-control form_input">
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <input name="phone" id="phone-1" type="text" required="" placeholder="Telefon raqamingiz"
+                class="form-control form_input">
+            </div>
+            <div class="col-md-4 col-sm-4" id="buyurtma">
+              <button type="submit" id="buyurtma">Jalyuziga buyurtma berish</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback">
+    <div class="container">
+      <div class="row">
+        <div class="section_header wow fadeInUp text-center">
+          <h2>Biz haqimizda</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="feedback_slider">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active about"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1" class="about"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2" class="about"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="row">
+                  <div class="col-md-4 hidden-xs col-sm-4">
+                    <img src="img/feedback/1.jpg" alt="" class="feed_jal">
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="row">
+                      <div class="col-md-2 text-center">
+                        <img src="img/avatar/1.jpg" alt="" class="img-circle">
+                      </div>
+                      <div class="col-md-10 text-center">
+                        <h5>Sanjar Davlatov</h5>
+                        <a href="#" title="">t.me/Sanjarbek</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="audio">
+                        <audio controls="" src="audio/afruza - azizim (www.muz.uz).mp3"></audio>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-4 hidden-xs col-sm-4">
+                    <img src="img/feedback/2.jpg" alt="" class="feed_jal">
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="row">
+                      <div class="col-md-2 text-center">
+                        <img src="img/avatar/2.jpg" alt="" class="img-circle">
+                      </div>
+                      <div class="col-md-10 text-center">
+                        <h5>Azim Nazarov</h5>
+                        
+                        <a href="#" title="">t.me/Azimjon</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="audio">
+                        <audio src="audio/jasurbek-mavlonov - sevaverasan (www.muz.uz).mp3" controls=""></audio>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-4 hidden-xs col-sm-4">
+                    <img src="img/feedback/3.jpg" alt="" class="feed_jal">
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="row">
+                      <div class="col-md-2 text-center">
+                        <img src="img/avatar/3.jpg" alt="" class="img-circle">
+                      </div>
+                      <div class="col-md-10 text-center">
+                        <h5>Murod Akbiyev</h5>
+                        <a href="#" title="">t.me/Akbiyev</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="audio">
+                        <audio src="audio/tohir-sulton - tak-tak (www.muz.uz).mp3" controls=""></audio>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-6">
+          <div class="map">
+            <script type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A164aa94f80c2b4f35b240f1026737bab0f642283a44d549118f8b19875208d18&amp;width=100%25&amp;height=330&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-1 col-sm-6">
+          <h2>Aloqaga chiqish</h2>
+          <div class="row">
+            <address>
+              <p id="address">
+                Manzil:
+              </p>
+              <p id="fargona">
+                Farg'ona viloyati, Quvasoy shahri, Azizov ko'chasi 233-30
+              </p>
+            </address>
+          </div>
+          <div class="row">
+            <div class="phone_footer">
+              <p id="phone_footer">
+                Telefon:
+              </p>
+              <p id="number">
+                +998 94 396-54-94
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <a href="#"><img src="img/iconfinder_facebook_circle_294710.svg" alt="Facebook" class="social"></a>
+            <a href="#"><img src="img/iconfinder_instagram_circle_294711.svg" alt="Instagram" class="social"></a>
+            <a href="#"><img src="img/iconfinder_youtube_circle_294712.svg" alt="Youtube" class="social"></a>
+            <a href="#"><img src="img/iconfinder_twitter_circle_294709.svg" alt="Twitter" class="social"></a>
+            <button id="get_answer" data-toggle="modal" href="#get_question">Savol berish</button>
+          </div>
+        </div>
+      </div>
+      <div class="row details_row">
+        <div class="col-md-4 col-sm-4 details">
+          <h5>MCHJ "Jalousie"</h5>
+          <p>
+            INN: 8987987465465465
+            <br>
+            INN: 4654846846846888
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-4 policy">
+          <a href="#policy_modal" title="" data-toggle="modal">Maxfiylik siyosati</a>
+          <br>
+          <p>Quvasoy 2019-2023</p>
+        </div>
+        <div class="col-md-4 col-sm-4 karimov">
+          <h4>Sayt yaratuvchisi:</h4>
+          <a href="https://univerinfo.uz" title="" target="_blank">UNIVERINFO.UZ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div></div>
+
+
+  <!-- Master chaqirish modal oynasi -->
+  <div class="modal fade" id="measurer_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body text-center">
+          <div class="row">
+            <div class="header_modal">
+              <h4>Master chaqirish uchun <br> ma'lumotlaringizni qoldiring.</h4>
+            </div>
+          </div>
+          <div class="row">
+            <form action="send.php" method="POST">
+              <div class="col-xs-12">
+                <input type="hidden" name="what" value="Master chaqirish">
+                <input name="name" type="text" required="" placeholder="Ismingiz" class="form-control form_input">
+              </div>
+              <div class="col-xs-12">
+                <input name="phone" id="phone-2" type="text" required="" placeholder="Telefon raqamingiz"
+                  class="form-control form_input">
+              </div>
+              <div class="col-xs-12">
+                <button type="submit" style="width: 100%">Master chaqirish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gorizontal jalyuzi modal oynasi -->
+  <div class="modal fade" id="more_horizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog type_jalou">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="header_modal_info">
+              <h4>Gorizontal jalyuzi</h4>
+              <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="fotorama" data-width="100%">
+                <img src="img/types/horizontal/1.jpg" alt="">
+                <img src="img/types/horizontal/2.jpg" alt="">
+                <img src="img/types/horizontal/3.jpg" alt="">
+                <img src="img/types/horizontal/4.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <br>
+              <p><span>200.000 so'mdan boshlab...</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <form action="send.php" method="POST">
+              <div class="col-sm-4">
+                <input type="hidden" name="what" value="Gorizontal jalyuzi">
+                <input name="name" type="text" required="" placeholder="Ismingiz" class="form-control form_input">
+              </div>
+              <div class="col-sm-4">
+                <input name="phone" id="phone-3" type="text" required="" placeholder="Telefon raqamingiz"
+                  class="form-control form_input">
+              </div>
+              <div class="col-sm-4">
+                <button type="submit">Buyurtma berish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vertikal jalyuzi modal oynasi -->
+  <div class="modal fade" id="more_vertical" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog type_jalou">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="header_modal_info">
+              <h4>Vertikal jalyuzi</h4>
+              <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="fotorama" data-width="100%">
+                <img src="img/types/5bc190f9dbdf0f7ec576bf25.jpg" alt="">
+                <img src="img/types/5bc190f9dbdf0f7ec576bf25.jpg" alt="">
+                <img src="img/types/5bc190f9dbdf0f7ec576bf25.jpg" alt="">
+                <img src="img/types/5bc190f9dbdf0f7ec576bf25.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <br>
+              <p><span>200.000 so'mdan boshlab...</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <form action="send.php" method="POST">
+              <div class="col-sm-4">
+                <input type="hidden" name="what" value="Vertikal jalyuzi">
+                <input name="name" type="text" required="" placeholder="Ismingiz" class="form-control form_input">
+              </div>
+              <div class="col-sm-4">
+                <input name="phone" id="phone-4" type="text" required="" placeholder="Telefon raqamingiz"
+                  class="form-control form_input">
+              </div>
+              <div class="col-sm-4">
+                <button type="submit">Buyurtma berish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Rulonli jalyuzi modal oynasi -->
+  <div class="modal fade" id="more_rulon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog type_jalou">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="header_modal_info">
+              <h4>Rulonli jalyuzi</h4>
+              <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="fotorama" data-width="100%">
+                <img src="img/types/horizontal/1.jpg" alt="">
+                <img src="img/types/horizontal/2.jpg" alt="">
+                <img src="img/types/horizontal/3.jpg" alt="">
+                <img src="img/types/horizontal/4.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <br>
+              <p><span>200.000 so'mdan boshlab...</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <form action="send.php" method="POST">
+              <div class="col-sm-4">
+                <input type="hidden" name="what" value="Rulonli jalyuzi">
+                <input name="name" type="text" required="" placeholder="Ismingiz" class="form-control form_input">
+              </div>
+              <div class="col-sm-4">
+                <input name="phone" id="phone-5" type="text" required="" placeholder="Telefon raqamingiz"
+                  class="form-control form_input">
+              </div>
+              <div class="col-sm-4">
+                <button type="submit">Buyurtma berish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Jalyuzi PLisse jalyuzi modal oynasi -->
+  <div class="modal fade" id="more_plisse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog type_jalou">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="header_modal_info">
+              <h4>Plisse jalyuzilari</h4>
+              <br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="fotorama" data-width="100%">
+                <img src="img/types/horizontal/1.jpg" alt="">
+                <img src="img/types/horizontal/2.jpg" alt="">
+                <img src="img/types/horizontal/3.jpg" alt="">
+                <img src="img/types/horizontal/4.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <br>
+              <p><span>200.000 so'mdan boshlab...</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <form action="send.php" method="POST">
+              <div class="col-sm-4">
+                <input type="hidden" name="what" value="Plisse jalyuzi">
+                <input name="name" type="text" required="" placeholder="Ismingiz" class="form-control form_input">
+              </div>
+              <div class="col-sm-4">
+                <input name="phone" id="phone-6" type="text" required="" placeholder="Telefon raqamingiz"
+                  class="form-control form_input">
+              </div>
+              <div class="col-sm-4">
+                <button type="submit">Buyurtma berish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Buyurtma berish modal oynasi -->
+  <div class="modal fade" id="measurer_get" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+        </div>
+        <div class="modal-body text-center">
+          <div class="row">
+            <div class="header_modal">
+              <h4>Ma'lumotlaringizni qoldiring. <br> Biz siz bilan bog'lanamiz.</h4>
+            </div>
+          </div>
+          <div class="row">
+            <form action="send.php" method="POST">
+              <div class="col-xs-12">
+                <input type="hidden" name="what" value="Buyurtma berish">
+                <input name="name" type="text" required="" placeholder="Ismingiz" class="form-control form_input">
+              </div>
+              <div class="col-xs-12">
+                <input name="phone" type="text" required="" placeholder="Telefon raqamingiz"
+                  class="form-control form_input">
+              </div>
+              <div class="col-xs-12">
+                <button type="submit" style="width: 100%">Buyurtma berish</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Savol berish -->
+  <div class="modal fade" id="get_question" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times</button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="row">
+            <div class="header_modal">
+              <h4>Ma'lumotlarni qoldirgan holda <br> sizni qizitirgan savolni yuboring. <br> Biz javob beramiz.</h4>
+            </div>
+          </div>
+          <div class="row">
+            <form action="send.php" method="POST">
+              <div class="col-xs-12">
+                <input type="hidden" name="what" value="Savol berish">
+                <input type="text" name="name" required="" placeholder="Ismingiz" class="form-control form_input">
+              </div>
+              <div class="col-xs-12">
+                <input type="text" name="phone" required="" placeholder="Telefon raqamingiz"
+                  class="form-control form_input">
+              </div>
+              <div class="col-xs-12">
+                <textarea name="question" id="textarea" cols="30" rows="5"
+                  placeholder="Sizni qiziqtirgan savol..."></textarea>
+              </div>
+              <div class="col-xs-12">
+                <button type="submit" style="width: 100%;">Savolni yuboring.</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Maxfiylik siyosati -->
+  <div class="modal fade" id="policy_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times</button>
+          <h4 class="modal-title">Maxfiylik siyosati</h4>
+        </div>
+        <div class="modal-body policy-modal">
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Yopish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    var h_hght = 110; // высота шапки
+    var h_mrg = 0; // отступ когда шапка уже не видна
+
+    $(function () {
+
+      var elem = $('#top_nav');
+      var top = $(this).scrollTop();
+
+      if (top > h_hght) {
+        elem.css('top', h_mrg);
+      }
+
+      $(window).scroll(function () {
+        top = $(this).scrollTop();
+
+        if (top + h_mrg < h_hght) {
+          elem.css('top', (h_hght - top));
+        } else {
+          elem.css('top', h_mrg);
+        }
+      });
+
+    });
+  </script>
+  <script>
+    $(document).ready(
+      function () {
+        $("html").niceScroll({
+          cursorcolor: "#000"
+        });
+      }
+    );
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#top_nav").on("click", "a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+
+          //узнаем высоту от начала страницы до блока на который ссылается якорь
+          top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({
+          scrollTop: top
+        }, 1000);
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".main_buttons").on("click", "a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+
+          //узнаем высоту от начала страницы до блока на который ссылается якорь
+          top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({
+          scrollTop: top
+        }, 1000);
+      });
+    });
+  </script>
+  <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”> </script> <script>
+    jQuery(document).ready(function () {
+
+      var btn = $('#button');
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+
+      btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: 0
+        }, '300');
+      });
+
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</body>
+
+</html>
