@@ -212,18 +212,18 @@ header.masthead h2 {
   margin-bottom: 15px;
 }
 
-.portfolio .portfolio-item .portfolio-item-caption {
+.portfolio .portfolio-item .portfolio-item-caption, .works-item-caption {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
   background-color: rgba(24, 188, 156, 0.9);
 }
 
-.portfolio .portfolio-item .portfolio-item-caption:hover {
+.portfolio .portfolio-item .portfolio-item-caption:hover, .works-item-caption:hover {
   opacity: 1;
 }
 
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content, .works-item-caption-content {
   font-size: 1.5rem;
 }
 
