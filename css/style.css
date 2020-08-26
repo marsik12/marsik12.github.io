@@ -10,10 +10,10 @@
 	height: 100%;
 	color: #ffffff;
 	box-sizing: border-box;
-	padding: 10px;
 	opacity: 0;
 	transition: opacity .3s;
 	border-radius: 5px;
+	padding: 10px;
 }
 
 .works__item:hover .works__item-wrapper {
@@ -24,16 +24,7 @@
 	text-align: center;
 	text-transform: uppercase;
 }
+
 .works__item-description {
 	text-align: left;
-}
-.works__item-link {
-	text-align: left;
-	text-transform: uppercase;
-	font-weight: bold;
-	transition: all .3s;
-}
-.works__item-link:hover {
-	text-decoration: none;
-	color: #ffffff;
 }
