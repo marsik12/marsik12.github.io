@@ -60,9 +60,8 @@ function myFunction() {
 
 var currentPage = window.location.href;
 var pageTitle = document.getElementsByTagName('title');
+var pageURL = 'https://marsik12.github.io/works/transformers.pro/services.html';
 
-if (currentPage === 'https://marsik12.github.io/works/transformers.pro/services.html') {
+if (currentPage == pageURL) {
 	pageTitle.innerHTML = "Xizmatlarimiz";
-} else {
-	pageTitle.innerHTML = "Disha Patani";
 }
