@@ -58,4 +58,11 @@ function myFunction() {
 	}
 }
 
-// @@include '../vendors/owl.carousel.min.js';
+var currentPage = window.location.href;
+var pageTitle = document.getElementsByTagName('title');
+
+if (currentPage === 'https://marsik12.github.io/works/transformers.pro/services.html') {
+	pageTitle.innerHTML = "Xizmatlarimiz";
+} else {
+	pageTitle.innerHTML = "Disha Patani";
+}
