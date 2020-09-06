@@ -57,11 +57,3 @@ function myFunction() {
 		x.style.display = "block";
 	}
 }
-
-var currentPage = window.location.href;
-var pageTitle = document.getElementsByTagName('title');
-var pageURL = 'https://marsik12.github.io/works/transformers.pro/services.html';
-
-if (currentPage == pageURL) {
-	pageTitle.innerHTML = "Xizmatlarimiz";
-}
