@@ -66,7 +66,7 @@
 							</li>
 						</ul>
 					</nav>
-					<button type="button" class="submitApplication__btn" href="#">Ariza qoldrish</button>
+					<button type="button" class="submitApplication__btn" id="leaveRequest">Ariza qoldirish</button>
 				</div>
 			</div>
 		</div>
@@ -84,20 +84,69 @@
 	</header>
 	<!-- todo SECTION HEADER END -->
 
+	<!-- todo MODAL WINDOW START -->
+	<div class="header__modal modal" id="headerModal">
+		<div class="modal__content">
+			<div class="modal__header">
+				<span class="close">&times;</span>
+				<div class="modal__title">Ariza qoldirish</div>
+			</div>
+			<div class="modal__body">
+				<p class="modal__description">Quyidagi formaga o'z ma'lumotlaringizni kiritib bizga yuboring. Biz uni ko'rib
+					chiqib, siz bilan tez fursatda bog'lanamiz.</p>
+				<form class="modal__form" action="request.php" method="POST">
+					<input class="modal__input" type="text" name="name" placeholder="Ismingiz" required>
+					<input class="modal__input" type="email" name="email" placeholder="Elektron manzilingiz" required>
+					<input class="modal__input" type="text" name="phone" placeholder="Telefon raqamingiz" required>
+					<input class="modal__input" type="text" name="RequestTheme" placeholder="Qisqa izoh">
+					<textarea class="modal__textarea" name="requestMessage"></textarea>
+					<button class="btn modal__btn" type="submit">Yuborish</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- todo MODAL WINDOW END -->
+
 	<!-- todo SECTION ABOUT START -->
 	<section class="about">
 		<div class="container">
-			<h3 class="about__title title">Biz haqimizda</h3>
+			<h3 class="news__title title">Biz haqimizda</h3>
 			<hr class="divider">
-			<div class="about__text">
-				<p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat officiis rerum
-					praesentium consequuntur doloribus sit, tempore reiciendis? Eum corrupti animi nobis ipsa quod vel
-					facere, velit nisi tempore dolor laudantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-					Inventore magnam libero tenetur ex reiciendis dolore, temporibus expedita? Similique ratione, saepe sunt
-					culpa, assumenda error autem nisi amet voluptatibus veritatis ut.</p>
-				<p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat officiis rerum
-					praesentium consequuntur doloribus sit, tempore reiciendis? Eum corrupti animi nobis ipsa quod vel
-					facere, velit nisi tempore dolor laudantium. lorem</p>
+			<p class="news__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora
+				aliquam cum quasi fugiat placeat esse odit. Magni, magnam? Necessitatibus saepe expedita amet ex.</p>
+			<div class="about__wrapper">
+				<div class="about__row">
+					<div class="about__info">
+						<div class="about__title">Kompaniya tarixi</div>
+						<p class="about__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id vitae
+							repellendus perferendis
+							ipsum molestiae consectetur nobis, molestias illo pariatur accusamus sapiente ea praesentium, ipsam
+							nemo non at alias
+							doloribus voluptate.</p>
+					</div>
+					<div class="about__img">
+						<picture>
+							<source srcset="./img/work_thumb_1.webp" type="image/webp"><img src="./img/work_thumb_1.jpg"
+								alt="About"></picture>
+					</div>
+				</div>
+				<div class="about__row">
+					<div class="about__info">
+						<div class="about__title">Ko'p yillik tajriba</div>
+						<p class="about__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id vitae
+							repellendus
+							perferendis
+							ipsum molestiae consectetur nobis, molestias illo pariatur accusamus sapiente ea praesentium, ipsam
+							nemo non at
+							alias
+							doloribus voluptate.</p>
+					</div>
+					<div class="about__img">
+						<picture>
+							<source srcset="./img/work_thumb_2.webp" type="image/webp"><img src="./img/work_thumb_2.jpg"
+								alt="About"></picture>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

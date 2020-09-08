@@ -53,7 +53,7 @@
 					</a>
 					<nav class="navigation header__navigation">
 						<ul class="navigation__wrapper">
-							<li class="navigation__item"><a class="navigation__link " href="./index.html">Bosh
+							<li class="navigation__item"><a class="navigation__link" href="./index.html">Bosh
 									sahifa</a>
 							</li>
 							<li class="navigation__item"><a class="navigation__link" href="./services.html">Xizmatlarimiz</a>
@@ -66,14 +66,14 @@
 							</li>
 						</ul>
 					</nav>
-					<button type="button" class="submitApplication__btn" href="#">Ariza qoldrish</button>
+					<button type="button" class="submitApplication__btn" id="leaveRequest">Ariza qoldirish</button>
 				</div>
 			</div>
 		</div>
 		<div class="header__slider">
 			<div class="slider__item fade" style="background: url('./img/slider_img_1.jpg');">
 				<div class="slider__wrapper">
-					<div class="slider__title">Ishlarimiz</div>
+					<div class="slider__title">Slayder sarlavhasi</div>
 					<div class="slider__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
 						saepe
 						quasi aliquam ut, blanditiis tenetur repellat fuga natus deleniti inventore laudantium ea neque
@@ -83,6 +83,29 @@
 		</div>
 	</header>
 	<!-- todo SECTION HEADER END -->
+
+	<!-- todo MODAL WINDOW START -->
+	<div class="header__modal modal" id="headerModal">
+		<div class="modal__content">
+			<div class="modal__header">
+				<span class="close">&times;</span>
+				<div class="modal__title">Ariza qoldirish</div>
+			</div>
+			<div class="modal__body">
+				<p class="modal__description">Quyidagi formaga o'z ma'lumotlaringizni kiritib bizga yuboring. Biz uni ko'rib
+					chiqib, siz bilan tez fursatda bog'lanamiz.</p>
+				<form class="modal__form" action="request.php" method="POST">
+					<input class="modal__input" type="text" name="name" placeholder="Ismingiz" required>
+					<input class="modal__input" type="email" name="email" placeholder="Elektron manzilingiz" required>
+					<input class="modal__input" type="text" name="phone" placeholder="Telefon raqamingiz" required>
+					<input class="modal__input" type="text" name="RequestTheme" placeholder="Qisqa izoh">
+					<textarea class="modal__textarea" name="requestMessage"></textarea>
+					<button class="btn modal__btn" type="submit">Yuborish</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- todo MODAL WINDOW END -->
 
 	<!-- todo SECTION WORKS START -->
 	<section class="works">
@@ -120,8 +143,34 @@
 						<div class="work__name">Ish sarlavhasi</div>
 					</div>
 				</a>
+				<a class="works__item" href="#">
+					<picture>
+						<source srcset="./img/work_thumb_1.webp" type="image/webp"><img class="works__img"
+							src="./img/work_thumb_1.jpg" alt="Works"></picture>
+					<div class="works__info-block">
+						<div class="plus">+</div>
+						<div class="work__name">Ish sarlavhasi</div>
+					</div>
+				</a>
+				<a class="works__item" href="#">
+					<picture>
+						<source srcset="./img/work_thumb_2.webp" type="image/webp"><img class="works__img"
+							src="./img/work_thumb_2.jpg" alt="Works"></picture>
+					<div class="works__info-block">
+						<div class="plus">+</div>
+						<div class="work__name">Ish sarlavhasi</div>
+					</div>
+				</a>
+				<a class="works__item" href="#">
+					<picture>
+						<source srcset="./img/work_thumb_3.webp" type="image/webp"><img class="works__img"
+							src="./img/work_thumb_3.jpg" alt="Works"></picture>
+					<div class="works__info-block">
+						<div class="plus">+</div>
+						<div class="work__name">Ish sarlavhasi</div>
+					</div>
+				</a>
 			</div>
-			<a class="works__btn btn" href="#">Barcha ishlarimizni ko'rish</a>
 		</div>
 	</section>
 	<!-- todo SECTION WORKS END -->

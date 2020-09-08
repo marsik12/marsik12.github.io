@@ -66,7 +66,7 @@
 							</li>
 						</ul>
 					</nav>
-					<button type="button" class="submitApplication__btn" href="#">Ariza qoldrish</button>
+					<button type="button" class="submitApplication__btn" id="leaveRequest">Ariza qoldirish</button>
 				</div>
 			</div>
 		</div>
@@ -84,7 +84,88 @@
 	</header>
 	<!-- todo SECTION HEADER END -->
 
-	<h1>Biz bilan aloqa</h1>
+	<!-- todo MODAL WINDOW START -->
+	<div class="header__modal modal" id="headerModal">
+		<div class="modal__content">
+			<div class="modal__header">
+				<span class="close">&times;</span>
+				<div class="modal__title">Ariza qoldirish</div>
+			</div>
+			<div class="modal__body">
+				<p class="modal__description">Quyidagi formaga o'z ma'lumotlaringizni kiritib bizga yuboring. Biz uni ko'rib
+					chiqib, siz bilan tez fursatda bog'lanamiz.</p>
+				<form class="modal__form" action="request.php" method="POST">
+					<input class="modal__input" type="text" name="name" placeholder="Ismingiz" required>
+					<input class="modal__input" type="email" name="email" placeholder="Elektron manzilingiz" required>
+					<input class="modal__input" type="text" name="phone" placeholder="Telefon raqamingiz" required>
+					<input class="modal__input" type="text" name="RequestTheme" placeholder="Qisqa izoh">
+					<textarea class="modal__textarea" name="requestMessage"></textarea>
+					<button class="btn modal__btn" type="submit">Yuborish</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- todo MODAL WINDOW END -->
+
+	<!-- todo SECTION CONTACT START -->
+	<section class="contact">
+		<div class="container">
+			<h3 class="news__title title">Biz bilan aloqa</h3>
+			<hr class="divider">
+			<p class="news__description description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora
+				aliquam cum quasi fugiat placeat esse odit. Magni, magnam? Necessitatibus saepe expedita amet ex.</p>
+			<div class="contact__wrapper">
+				<form class="contact__form">
+					<div class="fullname">
+						<label class="form__label" for="first_name">Ismingiz <br>
+							<input class="form__input" type="text" id="first_name" name="first_name" required>
+						</label>
+						<label class="form__label" for="last_name">Familiyangiz <br>
+							<input class="form__input" type="text" id="last__name" name="last__name">
+						</label>
+					</div>
+					<label class="form__label" for="email">Elektron manzilingiz</label>
+					<input class="form__input" type="email" id="email" name="email" required>
+					<label class="form__label" for="message">Xabar matni</label>
+					<textarea class="form__textarea" name="message" id="message"></textarea>
+					<button class="btn form__btn" type="submit">Yuborish</button>
+				</form>
+				<div class="contact__info">
+					<div class="contact__info-item">
+						<div class="contact__info-title">Manzilimiz</div>
+						<address class="company__address"><i class="fa fa-map-marker fa-1x"></i>&nbsp; Cho'lpon ko'chasi,
+							Farg'ona,
+							O'zbekiston 150100</address>
+					</div>
+					<div class="contact__info-item">
+						<div class="contact__info-title">Xabar yo'llang</div>
+						<a class="company__email" href="mailto:info@company.uz"><i class="fa fa-envelope fa-1x"></i>
+							&nbsp; info@company.uz</a>
+						<a class="company__email" href="mailto:info@company.uz"><i class="fa fa-envelope fa-1x"></i>
+							&nbsp; info@company.uz</a>
+					</div>
+					<div class="contact__info-item">
+						<div class="contact__info-title">Qo'ng'iroq qiling</div>
+						<a class="company__phone" href="tel:+998943965494"><i class="fa fa-phone fa-1x"></i>&nbsp; +998 94
+							396-54-94</a>
+						<a class="company__phone" href="tel:+998943965494"><i class="fa fa-phone fa-1x"></i>&nbsp; +998 94
+							396-54-94</a>
+					</div>
+					<div class="contact__info-item">
+						<div class="contact__info-title">Ijtimoiy tarmoqlarimiz</div>
+						<a class="links__item" href="https://facebook.com" target="_blank"><i
+								class="fa fa-facebook fa-3x"></i></a>
+						<a class="links__item" href="https://instagram.com" target="_blank"><i
+								class="fa fa-instagram fa-3x"></i></a>
+						<a class="links__item" href="https://t.me" target="_blank"><i class="fa fa-telegram fa-3x"></i></a>
+						<a class="links__item" href="https://youtube.com" target="_blank"><i
+								class="fa fa-youtube fa-3x"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- todo SECTION CONTACT END -->
 
 	<!-- todo SECTION FOOTER START -->
 	<footer class="footer">
